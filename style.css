@@ -1,0 +1,145 @@
+body {
+  text-align: center;
+  width: 100%;
+  background-color: rgb(248, 156, 156);
+}
+
+h2 {
+  font-family: fantasy;
+  font-size: 40px;
+  color: rgb(9, 5, 57);
+}
+
+.gradient-text {
+  color: rgb(0, 0, 114);
+  /* background-color: blue; */
+  /* margin-top: -220px; */
+  font-size: 60px;
+  /* background-repeat: repeat; */
+  /* -webkit-text-fill-color: transparent; */
+  /* animation: rainbow-text-simple-animation-rev 0.75s ease forwards; */
+}
+
+.gradient-text:hover {
+  animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+
+/* @keyframes rainbow-text-simple-animation-rev {
+  0% {
+    background-size: 65%;
+  }
+
+  20% {
+    background-size: 65%;
+  }
+
+  10% {
+    background-size: 10%;
+  }
+} */
+
+/* @keyframes rainbow-text-simple-animation {
+  0% {
+    background-size: 10%;
+  }
+
+  20% {
+    background-size: 65%;
+  }
+
+  10% {
+    background-size: 60%;
+  }
+} */
+
+h1 {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: normal;
+  font-size: 6em;
+  text-align: center;
+  margin-bottom: 0;
+  /* margin-bottom: -0.25em; */
+  display: block;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  cursor: pointer;
+}
+
+#inputBox {
+  height: 50px;
+  width: 25%;
+  border: 2px solid rgb(41, 3, 253);
+  border-radius: 20%;
+  color: black;
+  font-family: fantasy;
+  font-size: 20px;
+
+  /* background-image: linear-gradient(
+    to right,
+    rgb(176, 6, 131),
+    rgb(196, 61, 183)
+  ); */
+}
+
+#submitBtn {
+  height: 50px;
+  width: 100px;
+  border-radius: 20%;
+  font-family: fantasy;
+  /* background-color: #7553ba; */
+  background-image: linear-gradient(
+    to right,
+    rgb(124, 164, 237),
+    rgb(111, 219, 111)
+  );
+  font-size: 20px;
+}
+
+.allDiv {
+  height: 170px;
+  width: 170px;
+  background-color: #ca4246;
+  margin: 10px;
+  border: 7px solid rgb(5, 8, 52);
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.gameFlash {
+  animation: gameflashAnimation 1s ease;
+}
+
+@keyframes gameflashAnimation {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.userFlash {
+  animation: userflashAnimation 1s ease;
+}
+
+@keyframes userflashAnimation {
+  0%,
+  100% {
+    opacity: 1;
+    background-color: initial;
+  }
+
+  50% {
+    opacity: 0;
+    background-color: green;
+  }
+}
